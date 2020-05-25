@@ -1,0 +1,11 @@
+model.add(Convolution2D(filters=32,
+                        kernel_size=(2,2),
+                        activation='relu',
+                       ))
+
+model.add(Convolution2D(filters=32,
+                        kernel_size=(2,2),
+                        activation='relu',
+                       ))
+
+model.add(MaxPooling2D(pool_size=(2, 2)))
