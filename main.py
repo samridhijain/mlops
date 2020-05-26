@@ -54,7 +54,7 @@ test_set = test_datagen.flow_from_directory(
         target_size=(64, 64),
         batch_size=32,
         class_mode='binary')
-f= open("epoch.txt","r")
+f= open("/fold1/epoch.txt","r")
 epochs=int(f.read())
 f.close()
 out=model.fit(
