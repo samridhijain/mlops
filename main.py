@@ -54,7 +54,9 @@ test_set = test_datagen.flow_from_directory(
         target_size=(64, 64),
         batch_size=32,
         class_mode='binary')
-epochs=2
+f= open("epoch.txt","r")
+epochs=int(f.read())
+f.close()
 out=model.fit(
         training_set,
         steps_per_epoch=10,
