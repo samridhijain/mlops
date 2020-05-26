@@ -1,6 +1,5 @@
-f= open("/fold1/epoch.txt","r")
-epochs=int(f.read())
-f.close()
+with open('/fold1/epoch.txt') as f:
+  epochs=int(f.readline())
 
 epochs+=1
 
