@@ -60,10 +60,10 @@ with open('/fold1/epoch.txt') as f:
   
 out=model.fit(
         training_set,
-        steps_per_epoch=10,
+        steps_per_epoch=8000,
         epochs=epochs,
         validation_data=test_set,
-        validation_steps=28)
+        validation_steps=800)
 
 accuracy=out.history['accuracy'][-1] *100
 print("Accuracy for the model is : " , accuracy ,"%")
