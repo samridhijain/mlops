@@ -65,7 +65,7 @@ out=model.fit(
         validation_data=test_set,
         validation_steps=28)
 
-accuracy=out.history['accuracy'][0] *100
+accuracy=out.history['accuracy'][-1] *100
 print("Accuracy for the model is : " , accuracy ,"%")
 
 f= open("/fold1/accuracy.txt","w+")
