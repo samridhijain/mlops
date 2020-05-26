@@ -54,10 +54,11 @@ test_set = test_datagen.flow_from_directory(
         target_size=(64, 64),
         batch_size=32,
         class_mode='binary')
+epochs=2
 out=model.fit(
         training_set,
         steps_per_epoch=10,
-        epochs=2,
+        epochs=epochs,
         validation_data=test_set,
         validation_steps=28)
 
@@ -68,6 +69,9 @@ f= open("/fold1/accuracy.txt","w+")
 f.write(str(accuracy))
 f.close()
 
+f= open("epoch.txt","w+")
+f.write(str(epochs))
+f.close()
 
 # In[ ]:
 
