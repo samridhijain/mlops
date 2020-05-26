@@ -76,7 +76,7 @@ f= open("epoch.txt","w+")
 f.write(str(epochs))
 f.close()
 
-import matplotlib.pyplot as plt
+'''import matplotlib.pyplot as plt
 loss = out.history['loss']
 loss_val = out.history['val_loss']
 epo= epochs
@@ -87,7 +87,7 @@ plt.title('Training and Validation loss')
 plt.xlabel('Epochs')
 plt.ylabel('Loss')
 plt.legend()
-plt.show()
+plt.show()'''
 
 # In[ ]:
 
