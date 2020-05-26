@@ -60,7 +60,7 @@ with open('/fold1/epoch.txt') as f:
   
 out=model.fit(
         training_set,
-        steps_per_epoch=100,
+        steps_per_epoch=10,
         epochs=epochs,
         validation_data=test_set,
         validation_steps=800)
